@@ -1,0 +1,31 @@
+{
+    "name": "blockpc/storage-link",
+    "description": "create a symbolic link in the public folder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Blockpc",
+            "email": "soporte.blockpc@gmail.com"
+        }
+    ],
+    "require": {
+        "orchestra/testbench": "^6.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blockpc\\StorageLink\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blockpc\\StorageLink\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blockpc\\StorageLink\\Providers\\StorageLinkServiceProvider"
+            ]
+        }
+    }
+}
